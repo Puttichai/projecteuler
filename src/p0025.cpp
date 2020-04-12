@@ -25,6 +25,7 @@ void PrintResults(std::vector<int>& results, int ndigits)
     return;
 }
 
+// Find out the first Fibonacci number that contains 1000 digits.
 int main(int argc, char* argv[])
 {
     std::vector<int> Fa, Fb, Fc;
