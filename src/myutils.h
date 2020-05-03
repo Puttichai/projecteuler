@@ -14,5 +14,14 @@ void SerializeValues(std::stringstream& ss, std::vector<T>& values, std::string 
     }
 }
 
+template <typename T>
+T SumVector(const std::vector<T>& v)
+{
+    T sum = 0;
+    for( size_t index = 0; index < v.size(); ++index ) {
+	sum = sum + v[index];
+    }
+    return sum;
+}
 
 #endif // MYUTILS_H
